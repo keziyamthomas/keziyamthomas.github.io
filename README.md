@@ -1,4 +1,4 @@
 - 👋 Hi, I’m Keziya Thomas
 - 👀 I’m interested in software development, designing software solutions, building ML pipelines
 - 🌱 I’m currently diving deeper into data and analytics, machine learning concepts and algorithms
-- 📫 You can find me on LinkedIn using this link 
+- 📫 You can find me on LinkedIn using this link www.linkedin.com/in/keziyamthomas
