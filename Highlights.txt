@@ -1,2 +1,6 @@
+Master’s Degree in Data Science, Bachelor's Degree in Computer Science
+2+ years of experience in Machine Learning and Artificial Intelligence, backend development in Python using multiple frameworks and libraries
 2 years of experience in software development with JAVA
 Worked on 10+ projects with Relational Databases and SQL
+Led client meetings for gathering business requirements and project planning
+Automated redundant tasks using scripting, thereby saving 25% time in tasks like preprocessing images for training and data cleaning

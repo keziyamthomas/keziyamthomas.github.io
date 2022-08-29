@@ -29,28 +29,13 @@
 		<!-- Main -->
 			<div id="main">
                 <section id="one">
-                    <!-- <header class="major">
-                        <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                        magna sed accumsan arcu neque.</h2>   
-                    </header> -->
                     <p>Experienced Machine Learning Engineer and Software developer</p>
-                    <!-- <hr> -->
-                    <!-- <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p> -->
-                    <!-- <ul class="actions">
-                        <li><a href="resume.html" class="button">Resume</a></li>
-                    </ul> -->
                 </section>
 
                 <section id="two">
                     <h2>HIGHLIGHTS</h2>
                     <div class="highlight">
                         <ul id="highlights-points">
-                            <li>Master’s Degree in Data Science, Bachelor's Degree in Computer Science</li>
-                            <li>2+ years of experience in Machine Learning and Artificial Intelligence, backend development in Python using multiple frameworks and libraries</li>
-                            <li>2 years of experience in software development with JAVA</li>
-                            <li>Worked on 10+ projects with Relational Databases and SQL</li>
-                            <li>Led client meetings for gathering business requirements and project planning</li>
-                            <li></li>
                         </ul>
                     </div>
                 </section>
@@ -83,44 +68,18 @@
 	
     
     <script>
-        // $.get("./Highlights.txt").
-        // then(x => $("#highlights-points").html("<li>" + x.split('\n').join('</li><li>') + "</li>"))
-        
-        // $.support.cors = true;
-        // $.ajax({
-        //     url: "Highlights.txt",
-        //     dataType: "text",
-        //     cors: true ,
-        //     crossDomain: true,
-        //     secure: true,
-        //     headers: {
-        //         'Access-Control-Allow-Origin': '*',
-        //     },
-        //     success : function (data) {
-        //         $html = "";
-        //         var lines = data.split("\n");
-        //         for (var i = 0, len = lines.length; i < len; i++) {
-        //             $html += '<li>'+lines[i]+'</li>';
-        //         }
-        //         console.log($html)
-        //         $('#highlights-points').append($html);
-        //     }
-        // });
-        // console.log($html)
-
         async function loadHighlights(url){
             text = await fetch(url);
             displayText(await text.text());
         }
         function displayText(data){
-            console.log(data);
-            // $html = "";
-            // var lines = data.split("\n");
-            // for (var i = 0, len = lines.length; i < len; i++) {
-            //     $html += '<li>'+lines[i]+'</li>';
-            // }
-            // console.log($html)
-            // $('#highlights-points').append($html);
+            // console.log(data);
+            $html = "";
+            var lines = data.split("\n");
+            for (var i = 0, len = lines.length; i < len; i++) {
+                $html += '<li>'+lines[i]+'</li>';
+            }
+            $('#highlights-points').append($html);
         }
         loadHighlights("./Highlights.txt");
     </script>
