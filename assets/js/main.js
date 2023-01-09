@@ -114,4 +114,10 @@
 
 			});
 
+			$("a #fa-envelope").click(function(event) {
+				event.preventDefault();
+				navigator.clipboard.writeText($(this).attr("href")).then(() => {});
+				console.log("Message coped to clipboard")
+			 });
+
 })(jQuery);
