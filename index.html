@@ -12,10 +12,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script type = "text/javascript"> 
 			var container = document.getElementById('main'); 
-			function copyEmail(e) {   
+			function copyContent(e) {   
 				e.preventDefault();
 				navigator.clipboard.writeText(e.target.getAttribute('href')).then(() => {
-					alert("Copied Keziya's email id to clipboard")
+					alert("Copied Keziya's contact number to clipboard")
 				});
 			}  
 			</script> 
@@ -89,6 +89,22 @@
 											<b>Domain: </b>Computer Vision - Object Detection<br>
 											<b>Dataset: </b>Images collected manually and annotated using LabelImg<br></h5>
 										<p>	
+											The goal of this project was to identify species of fishes that are present in the image captured by the user. Tensorflow’s Object Detection API provides multiple model architectures that can be trained and inferences can be made using these trained models. For this problem, I chose Faster RCNN Inception model architecture and trained the model on the fish species dataset. Weights from training COCO dataset was taken as initial weights. The trained model was deployed on AWS and nginx was used to expose the API endpoint and serve prediction requests. The training session was setup on AWS Sagemaker during later stages of the project since it saved a lot of training time.<br>
+										</p>
+									</div>
+									<div class="col-4">
+										<img class="image fit thumb" src="images/thumbs/002.jpg" alt=""/>
+									</div>
+								</div>
+							</article>
+							<article class="list-group work-item">
+								<div class="row">
+									<div class="col-8">
+										<h3>Extracting Text from Identity Card for Autofilling forms</h3>
+										<h5><b>Tech Used: </b>Python, OpenCV, Pytesseract, Fuzzywuzzy Flask, Nginx<br>
+											<b>Domain: </b>Optical Character Recognition (OCR)<br></h5>
+										<p>	
+											The main idea behind this OCR model is to extract details from a scan of the identity card, map details on the card to fields on the form. OpenCV was used to pre-process the image, PyTesseract, to extract text from image and fuzzywuzzy, to find the closest match to the specific keywords we are looking for in the image<br>
 										</p>
 									</div>
 									<div class="col-4">
@@ -114,13 +130,12 @@
 							<article class="list-group work-item">
 								<div class="row">
 									<div class="col-8">
-										<h3>Exploratory Data Analysis (EDA)</h3>
+										<h3>Analysis and manipulation of data</h3>
 										<h5><b>Tech Used: Python, Pandas</b><br>
-											<b>Domain: Exploratory Data Analysis</b><br>
-											<b>Dataset: </b>Kaggle Superstore Dataset 
-
+											<b>Domain: Exploratory Data Analysis (EDA)</b><br>
+											<b>Dataset: </b>Kaggle Superstore Dataset<br>
 										</h5>
-										<p></p>
+										<p>Exploring, analysing and manipulating data in a dataset as part of pre-processing so that they can be used later for prediction. This project is explained in detail on my blog <a href = "https://medium.com/@keziyamthomas/a-quick-introduction-to-exploratory-data-analysis-eda-using-pandas-87f4fb6a6340" target="_blank">here</a>.</p>
 									</div>
 									<div class="col-4">
 										<img class="image fit thumb" src="images/thumbs/003.jpg" alt=""/>
@@ -529,10 +544,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<ul class="icons">
 						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 						<li><a href="https://www.linkedin.com/in/keziyamthomas" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span target="_blank" class="label">Github</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-github"><span target="_blank" class="label">Github</span></a></li> -->
 						<li><a href="https://medium.com/@keziyamthomas" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
 						<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-						<li><a href="keziyamthomas@gmail.com" id="copy-email" onclick="copyEmail(event)" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="mailto:keziyamthomas@gmail.com" id="copy-email" class="icon solid fa-envelope"><span class="label">Email id</span></a></li>
+						<li><a href="+16474627209" id="copy-contact" onclick="copyContent(event)" class="icon solid fa-phone"><span class="label">Contact Number</span></a></li>
 					</ul>
 					<!-- <ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
