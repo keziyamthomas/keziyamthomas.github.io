@@ -2555,6 +2555,10 @@ input, select, textarea {
 
 	.work-item {
 		margin: 0 0 2em 0;
+		padding: 2em;
+		border-radius: 25px;
+		/* margin: 3em; */
+		background-color: papayawhip;
 	}
 
 		.work-item .image {
@@ -2562,14 +2566,23 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
-			font-size: 1em;
+			font-size: 1.3em;
 			margin: 0 0 0.5em 0;
 		}
 
+		.work-item h5 {
+			font-size: 0.9em;
+			margin: 0 0 0.5em 0;
+		}
+
+
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 0.9em;
 			line-height: 1.5em;
 			margin: 0;
+			text-align: justify;
+			text-justify: inter-word;
+			justify-content: space-between;
 		}
 
 /* Header */
